@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#box{
+    
+    background-color:rgb(102, 96, 96);
+    display: flex;
+    flex-direction: column;
+   position: relative;
+   overflow: hidden;
+   /* align-items: center; */
+}
+#rod1,#rod2{
+    width: 350px;
+    height: 35px;
+    background-color: blue;
+   
+    border-radius:20px;
+   display: flex;
+    color: white;
+    font-size:1.5rem;
+    font-weight: 700;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+  
+   /* left:50%;
+   transform: translateX(-50%); */
+   transition: all 0.05s linear;
+}
+#rod1{
+    top:0;
+}
+#rod2{
+    
+    bottom: 0;
+    /* top:94%; */
+    background-color:rgb(245, 29, 180); 
+}
+#ball{
+    height: 35px;
+    width: 35px;
+    
+    background: radial-gradient(circle at 50px 50px, red, #5a2a2a);
+    
+    border-radius: 50%;
+    position: absolute;
+    
+    align-self: center;
+    /* left:20%; */
+    /* transform: translate(5px,-5px);  */
+}
+.justifyCenter{
+    justify-self: center;
+}
